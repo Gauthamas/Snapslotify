@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon layer, from the app icon SVGs (108 x 108 viewport, the adaptive icon's safe zone in the middle 66) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M33,41 V33 H41" android:fillColor="#00000000" android:strokeColor="#FF000000"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M67,33 H75 V41" android:fillColor="#00000000" android:strokeColor="#FF000000"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M75,67 V75 H67" android:fillColor="#00000000" android:strokeColor="#FF000000"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M41,75 H33 V67" android:fillColor="#00000000" android:strokeColor="#FF000000"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M43,39 h22 a4,4 0 0 1 4,4 v22 a4,4 0 0 1 -4,4 h-22 a4,4 0 0 1 -4,-4 v-22 a4,4 0 0 1 4,-4 z M39,48 h30 v2 h-30 z" android:fillColor="#FF000000" android:fillType="evenOdd" />
+    <path android:pathData="M46.5,35 h0.0 a1.5,1.5 0 0 1 1.5,1.5 v3.0 a1.5,1.5 0 0 1 -1.5,1.5 h-0.0 a1.5,1.5 0 0 1 -1.5,-1.5 v-3.0 a1.5,1.5 0 0 1 1.5,-1.5 z" android:fillColor="#FF000000" />
+    <path android:pathData="M61.5,35 h0.0 a1.5,1.5 0 0 1 1.5,1.5 v3.0 a1.5,1.5 0 0 1 -1.5,1.5 h-0.0 a1.5,1.5 0 0 1 -1.5,-1.5 v-3.0 a1.5,1.5 0 0 1 1.5,-1.5 z" android:fillColor="#FF000000" />
+</vector>

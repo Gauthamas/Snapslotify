@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon layer, from the app icon SVGs (108 x 108 viewport, the adaptive icon's safe zone in the middle 66) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- snap brackets -->
+    <path android:pathData="M33,41 V33 H41" android:fillColor="#00000000" android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M67,33 H75 V41" android:fillColor="#00000000" android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M75,67 V75 H67" android:fillColor="#00000000" android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M41,75 H33 V67" android:fillColor="#00000000" android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <!-- calendar card -->
+    <path android:pathData="M43,39 h22 a4,4 0 0 1 4,4 v22 a4,4 0 0 1 -4,4 h-22 a4,4 0 0 1 -4,-4 v-22 a4,4 0 0 1 4,-4 z" android:fillColor="#FFFFFFFF" />
+    <path android:pathData="M39,43 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v5 h-30 z" android:fillColor="#FF14B8A6" />
+    <path android:pathData="M46.5,36 h0.0 a1.5,1.5 0 0 1 1.5,1.5 v3.0 a1.5,1.5 0 0 1 -1.5,1.5 h-0.0 a1.5,1.5 0 0 1 -1.5,-1.5 v-3.0 a1.5,1.5 0 0 1 1.5,-1.5 z" android:fillColor="#FF0F172A" />
+    <path android:pathData="M61.5,36 h0.0 a1.5,1.5 0 0 1 1.5,1.5 v3.0 a1.5,1.5 0 0 1 -1.5,1.5 h-0.0 a1.5,1.5 0 0 1 -1.5,-1.5 v-3.0 a1.5,1.5 0 0 1 1.5,-1.5 z" android:fillColor="#FF0F172A" />
+    <path android:pathData="M44,52 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFCBD5E1" />
+    <path android:pathData="M52,52 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFCBD5E1" />
+    <path android:pathData="M60,52 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFCBD5E1" />
+    <path android:pathData="M44,59 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFCBD5E1" />
+    <path android:pathData="M60,59 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFCBD5E1" />
+    <!-- highlighted slot -->
+    <path android:pathData="M52,59 h4 a1,1 0 0 1 1,1 v2 a1,1 0 0 1 -1,1 h-4 a1,1 0 0 1 -1,-1 v-2 a1,1 0 0 1 1,-1 z" android:fillColor="#FFF59E0B" />
+</vector>

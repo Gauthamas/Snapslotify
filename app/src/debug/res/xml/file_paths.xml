@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug build: the metrics folder, the camera's temporary photo and the "save as test case" folder are shareable. -->
+<paths>
+    <files-path name="metrics" path="metrics/" />
+    <cache-path name="camera" path="camera/" />
+    <!-- a problem report's screenshot, only when the user attaches it; cleared after sending and on the next launch -->
+    <cache-path name="reports" path="reports/" />
+    <files-path name="testcases" path="testcases/" />
+</paths>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Direct share: the dynamic shortcut in ShareShortcut.kt carries this category -->
+    <share-target android:targetClass="in.gauthama.snapslotify.review.ReviewActivity">
+        <data android:mimeType="image/*" />
+        <category android:name="in.gauthama.snapslotify.category.SHARE_IMAGE" />
+    </share-target>
+</shortcuts>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds only: these strings are not in the release build. -->
+<resources>
+    <string name="show_raw_ocr">Show raw OCR</string>
+    <string name="raw_ocr_title">Raw OCR, last image</string>
+</resources>

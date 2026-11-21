@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/event_card"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <!-- Title, with a clear button: a wrong title costs one tap to clear, then only the new letters -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <in.gauthama.snapslotify.review.CountingEditText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/field_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:id="@+id/clear_title"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/clear_title"
+            android:minWidth="48dp"
+            android:padding="0dp"
+            android:text="✕"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- the model is working on the title; its title then comes as a suggestion chip below -->
+    <TextView
+        android:id="@+id/title_improving"
+        style="@style/Snap.Source"
+        android:text="@string/title_improving"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/undo_title"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <TextView android:id="@+id/title_flags" style="@style/Snap.Flag" />
+    <TextView android:id="@+id/title_source" style="@style/Snap.Source" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/title_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <!-- Date -->
+    <TextView style="@style/Snap.Label" android:text="@string/field_date" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/Snap.Value"
+        android:hint="@string/pick_date" />
+
+    <TextView android:id="@+id/date_flags" style="@style/Snap.Flag" />
+
+    <Button
+        android:id="@+id/confirm_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_date"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/date_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/date_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <TextView android:id="@+id/date_source" style="@style/Snap.Source" />
+
+    <!-- Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView style="@style/Snap.Label" android:text="@string/field_start" />
+
+            <TextView
+                android:id="@+id/start"
+                style="@style/Snap.Value"
+                android:hint="@string/pick_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView style="@style/Snap.Label" android:text="@string/field_end" />
+
+            <TextView
+                android:id="@+id/end"
+                style="@style/Snap.Value"
+                android:hint="@string/pick_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/time_flags" style="@style/Snap.Flag" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/time_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/time_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <TextView android:id="@+id/time_source" style="@style/Snap.Source" />
+
+    <!-- Location: optional, behind Add location until tapped or a value was found -->
+    <Button
+        android:id="@+id/add_location"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_location"
+        android:textAllCaps="false" />
+
+    <in.gauthama.snapslotify.review.CountingEditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/field_location"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:visibility="gone" />
+
+    <TextView android:id="@+id/location_source" style="@style/Snap.Source" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/all_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/field_all_day" />
+
+    <TextView android:id="@+id/add_note" style="@style/Snap.Source" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_to_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_calendar" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/delete_event" />
+    </LinearLayout>
+</LinearLayout>

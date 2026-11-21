@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spike only (debug builds). Delete this file together with the spike package. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ML Kit's telemetry dependency (datatransport) declares INTERNET; strip it so the spike is provably offline. -->
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:node="remove" />
+
+    <application>
+        <!-- No launcher entry; start with: adb shell am start -n in.gauthama.snapslotify/.spike.SpikeOcrActivity -->
+        <activity
+            android:name=".spike.SpikeOcrActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="OCR spike" />
+        <!-- adb shell am start -n in.gauthama.snapslotify/.spike.BatchOcrActivity -\-es dir snap_test (images in the app's private files/snap_test/) -->
+        <activity
+            android:name=".spike.BatchOcrActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="Batch OCR" />
+        <!-- LLM timing spike (Build 2 step 0): adb shell am start -n in.gauthama.snapslotify/.spike.LlmSpikeActivity -\-es plan plan.json -->
+        <activity
+            android:name=".spike.LlmSpikeActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="LLM spike" />
+        <!-- Phone timing against docs/PHONE_BUDGET.md: adb shell am start -n in.gauthama.snapslotify/.spike.PhoneTimingActivity -\-es phase warm -->
+        <activity
+            android:name=".spike.PhoneTimingActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="Phone timing" />
+        <!-- Debug settings (OCR engine): adb shell am start -n in.gauthama.snapslotify/.spike.DebugSettingsActivity -->
+        <activity
+            android:name=".spike.DebugSettingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="Debug settings" />
+        <!-- Share log: starts with the process; export with adb (see diag/ShareTrace.kt) -->
+        <provider
+            android:name=".diag.ShareLogInit"
+            android:authorities="${applicationId}.sharelog"
+            android:exported="false" />
+        <receiver
+            android:name=".diag.ShareLogExportReceiver"
+            android:exported="true" />
+    </application>
+
+</manifest>

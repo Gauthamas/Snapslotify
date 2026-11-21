@@ -1,0 +1,160 @@
+<resources>
+    <!-- The only place the display name is written; renaming the app touches this line only. -->
+    <string name="app_name">Snapslotify</string>
+    <string name="open_ocr_spike">OCR spike</string>
+    <string name="pick_image">Pick image</string>
+    <string name="take_photo">Take photo</string>
+    <string name="open_debug_settings">Debug settings</string>
+    <string name="no_camera_app">No camera app found.</string>
+    <string name="export_metrics">Export metrics</string>
+    <string name="no_metrics_yet">No metrics logged yet.</string>
+    <string name="hint_home">Pick a screenshot or photo, take a photo, or share an image to Snapslotify from any app.</string>
+    <string name="share_shortcut_long">Make a calendar event from this image</string>
+    <string name="share_pin_tip">Tip: to find Snapslotify faster when you share an image, long-press it in the share sheet and choose Pin, if your phone offers it.</string>
+
+    <string name="review_title">Review</string>
+    <string name="hide_image">Hide image</string>
+    <string name="show_image">Show image</string>
+    <string name="image_description">The image being read</string>
+    <string name="no_event_found">Couldn\'t find an event in this image</string>
+    <string name="event_header">Event %1$d</string>
+    <string name="field_title">Title</string>
+    <string name="field_date">Date</string>
+    <string name="field_start">Start time</string>
+    <string name="field_end">End time</string>
+    <string name="field_location">Location</string>
+    <string name="add_location">+ Add location</string>
+    <string name="add_event">+ Add event</string>
+    <string name="title_improving">Improving the title…</string>
+    <string name="undo_title">Undo: use \"%1$s\"</string>
+    <string name="field_all_day">All day</string>
+    <string name="pick_date">Tap to pick a date</string>
+    <string name="pick_time">Tap to pick</string>
+    <string name="confirm_date">Yes, this date is right</string>
+    <string name="suggested_chip">Suggested, please check: %1$s</string>
+    <string name="source_line">From: \"%1$s\"</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="delete_event">Delete</string>
+    <string name="deleted_event">Event deleted.</string>
+    <string name="note_pick_date">Pick a date first.</string>
+    <string name="note_confirm_date">Confirm the date first.</string>
+    <string name="note_opened_calendar">Opened in your calendar. Save it there.</string>
+    <string name="no_calendar_app">No calendar app found.</string>
+    <string name="added">Added</string>
+    <string name="blurry_photo">This photo is blurry. Retake for better results</string>
+    <string name="retake">Retake</string>
+    <string name="use_anyway">Use anyway</string>
+    <string name="camera_title">Camera</string>
+    <string name="camera_shutter">Take photo</string>
+    <string name="camera_hold_still">Hold still…</string>
+    <string name="camera_failed">The photo could not be taken. Try again.</string>
+    <string name="add_all">Add all (%1$d)</string>
+    <string name="all_added">All added</string>
+    <string name="add_all_result">%1$d of %2$d added</string>
+    <string name="report_pick_email_app">Send the report with</string>
+    <string name="add_all_pick_calendar">Add the events with</string>
+    <string name="add_all_next">Add next (%1$d left)</string>
+    <string name="add_all_running">One event at a time: save it in the calendar, then come back here for the next.</string>
+    <string name="add_all_result_failed">%1$d of %2$d added. Not added: %3$s. Tap its Add to try again.</string>
+    <string name="note_add_failed">Not added. Tap Add to calendar to try again.</string>
+
+    <string name="try_harder">Try harder</string>
+    <string name="try_harder_stop">Stop</string>
+    <string name="try_harder_running">Reading the image again. This can take up to about 20 seconds.</string>
+    <string name="try_harder_found">Suggestions added below. Please check them; tap one to use it.</string>
+    <string name="try_harder_nothing">Nothing new found.</string>
+    <string name="try_harder_failed">Couldn\'t read more from this image. Try again?</string>
+    <string name="try_harder_stopped">Stopped.</string>
+
+    <string name="save_test_case">Save as test case</string>
+    <string name="copy_ocr_json">Copy OCR JSON</string>
+    <string name="view_ocr_json">View OCR JSON</string>
+    <string name="copy">Copy</string>
+    <string name="close">Close</string>
+    <string name="copied_ocr_json">OCR JSON copied</string>
+    <string name="ocr_json_label">OCR JSON</string>
+
+    <string name="error_no_image">No image was received.</string>
+    <string name="error_unreadable">This image could not be read.</string>
+    <string name="error_out_of_memory">This image is too large to open.</string>
+    <string name="error_ocr_failed">Text recognition failed for this image.</string>
+    <!-- Report a problem -->
+    <string name="report_problem">Report a problem</string>
+    <string name="report_title">Report a problem</string>
+    <string name="report_what">What went wrong?</string>
+    <string name="report_reason_wrong_date">Wrong date and not flagged</string>
+    <string name="report_reason_wrong_time">Wrong time and not flagged</string>
+    <string name="report_reason_wrong_title">Wrong title</string>
+    <string name="report_reason_no_event">Event shown but there was none</string>
+    <string name="report_reason_missed_event">Event missed</string>
+    <string name="report_reason_other">Other</string>
+    <string name="report_note_hint">Add a note (optional)</string>
+    <string name="report_attach_screenshot">Attach the screenshot</string>
+    <string name="report_attach_screenshot_help">Adds the image to the email so we can see the page the app read.</string>
+    <string name="report_no_screenshot">No screenshot goes with this report.</string>
+    <string name="report_include_text">Include the text read from it</string>
+    <string name="report_include_text_help">Adds the words the app recognised on the screenshot to the email.</string>
+    <string name="report_no_text">No text was read for this report.</string>
+    <string name="report_review_note">Your email app opens with the report filled in. Nothing is sent until you send it there.</string>
+    <string name="report_send">Open email</string>
+    <string name="report_no_email_app">No email app was found. Copy the report below and send it to %1$s.</string>
+    <string name="report_copy">Copy report</string>
+    <string name="report_copied">Report copied</string>
+    <string name="more_options">More options</string>
+    <!-- Taps saved (estimate, kept on the phone) and About -->
+    <string name="taps_strip_now">About %1$d taps saved if you add now (estimated)</string>
+    <string name="taps_strip_more">About %1$d taps saved, %2$d more if you add the rest (estimated)</string>
+    <string name="taps_strip_done">About %1$d taps saved on this page (estimated)</string>
+    <string name="taps_strip_none_now">No taps saved if you add now (estimated): it needed a lot of fixing</string>
+    <string name="taps_strip_none_done">No taps saved on this page (estimated): it needed a lot of fixing</string>
+    <!-- After Add: the confirmation screen -->
+    <plurals name="added_heading">
+        <item quantity="one">Added %1$d event from this page</item>
+        <item quantity="other">Added %1$d events from this page</item>
+    </plurals>
+    <string name="added_saved_number">%1$d</string>
+    <plurals name="added_saved_label">
+        <item quantity="one">tap saved (estimated)</item>
+        <item quantity="other">taps saved (estimated)</item>
+    </plurals>
+    <string name="added_breakdown">By hand: about %1$d taps\nWith Snapslotify: about %2$d taps (estimated)</string>
+    <string name="added_none">No taps saved</string>
+    <plurals name="added_none_label">
+        <item quantity="one">on this one (estimated). It needed a lot of fixing.</item>
+        <item quantity="other">on these (estimated). They needed a lot of fixing.</item>
+    </plurals>
+    <string name="added_batch">%1$d events from this page: about %2$d taps saved in all (estimated)</string>
+    <string name="added_note">An estimate: the taps to add the events by hand in your calendar app, minus the taps you made here. Check each event in your calendar.</string>
+    <string name="added_done">Done</string>
+    <string name="added_back">Back to the page</string>
+    <!-- Home screen -->
+    <string name="home_promise">Snapslotify cuts the taps of adding an event. It fills in what it can, you check it and tap Add.</string>
+    <string name="clear_title">Clear title</string>
+    <string name="home_offline">Everything is done fully offline, on your phone: the app has no internet access and nothing is uploaded.</string>
+    <string name="home_example">A typical event (a %1$d-letter title, a place, next month): about %2$d taps by hand, about %3$d with Snapslotify (estimated).</string>
+    <plurals name="home_totals">
+        <item quantity="one">About %1$d taps saved over %2$d event, about %3$s per event (estimated)</item>
+        <item quantity="other">About %1$d taps saved over %2$d events, about %3$s per event (estimated)</item>
+    </plurals>
+    <string name="about">About</string>
+    <string name="about_title">About Snapslotify</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="privacy_policy_url" translatable="false">https://gauthamas.github.io/snapslotify-privacy/</string>
+    <string name="about_privacy">Privacy policy</string>
+    <string name="about_privacy_hint">Opens in your browser</string>
+    <string name="about_no_browser">No browser found to open the privacy policy.</string>
+    <string name="about_taps_heading">Taps saved</string>
+    <string name="about_no_events">No events added yet.</string>
+    <string name="about_totals">Events added: %1$d\nTaps saved: about %2$d (estimated)\nPer event: about %3$s taps (estimated)\nCharacters not typed: about %4$d (estimated)\n(by hand: about %5$d taps, with the app: about %6$d, estimated)</string>
+    <string name="about_taps_note">An estimate, kept on this phone only: the taps to add each event by hand in the calendar app, minus the taps you made in Snapslotify.</string>
+    <plurals name="about_no_saving">
+        <item quantity="one">%1$d event saved no taps (estimated): it needed a lot of fixing</item>
+        <item quantity="other">%1$d events saved no taps (estimated): they needed a lot of fixing</item>
+    </plurals>
+    <string name="about_timeouts">Model calls stopped at their time limit: %1$d</string>
+    <!-- a share of several images: one review, of the first -->
+    <plurals name="share_first_image_only">
+        <item quantity="one">%1$d image shared. Only the first is read.</item>
+        <item quantity="other">%1$d images shared. Only the first is read.</item>
+    </plurals>
+</resources>

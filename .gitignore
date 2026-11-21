@@ -1,0 +1,29 @@
+# Build outputs and local tool state
+build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+/captures
+*.iml
+.idea/
+.DS_Store
+local.properties
+
+# Signing: never committed
+keystore.properties
+*.jks
+*.keystore
+
+# llama.cpp source, fetched by tools/get_llama_cpp.sh at the commit in llmspike/LLAMA_COMMIT
+llmspike/third_party/
+
+# Model files, placed by hand (see README): never committed
+*.gguf
+*.onnx
+/models/src/main/assets/
+app/src/debug/assets/paddle/
+
+# Private evaluation data some tests read when present (they skip without it)
+fixtures/
+benchmarks/
