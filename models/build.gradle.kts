@@ -13,3 +13,17 @@ assetPack {
         deliveryType.set("install-time")
     }
 }
+
+// Without the model files the bundle still builds, and the app runs on code only. Say so when a bundle is built, so an
+// empty asset pack is never a surprise. Where to get the files: README, "Where the models are hosted".
+// The folder is gitignored, so a fresh clone lacks it; the asset pack step fails on a missing folder, not an empty one.
+file("src/main/assets").mkdirs()
+val modelFiles = listOf("vl/LFM2.5-VL-450M-mix-Q4_0.gguf", "vl/mmproj-LFM2.5-VL-450m-Q8_0.gguf")
+gradle.taskGraph.whenReady {
+    if (allTasks.none { it.name.startsWith("bundle") }) return@whenReady
+    val missing = modelFiles.filterNot { file("src/main/assets/$it").isFile }
+    if (missing.isNotEmpty()) logger.warn(
+        "Snapslotify: model files missing from models/src/main/assets: ${missing.joinToString()}. The bundle builds " +
+            "without them and the app runs on code only (no model chips). See README.md, \"Where the models are hosted\"."
+    )
+}

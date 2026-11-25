@@ -83,7 +83,8 @@ The model files are hosted on Hugging Face, not in this repository:
 - Debug build: copy both files into the app's storage under `files/vl/` with adb, as shown under *Debug build* below,
   using these file names in place of the base model's.
 
-If the files are missing, the build still succeeds and the app runs on code only: the model chips do not appear.
+If the files are missing, the build still succeeds and the app runs on code only: the model chips do not appear. A
+bundle build says so, with a warning that names the missing files.
 
 **Licence.** The models are derived from Liquid AI's LFM2.5-VL-450M and are under the **LFM Open License v1.0**
 (`licenses/LFM-Open-License-v1.0.txt`), not under this repository's Apache License. In short: keep the licence text
