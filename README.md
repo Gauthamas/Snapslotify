@@ -66,6 +66,31 @@ gitignored; never commit it.
 No model files are in this repository. The app works without them: it reads the page with ML Kit and finds the events
 in code, and the model chips simply do not appear.
 
+### Where the models are hosted
+
+The model files are hosted on Hugging Face, not in this repository:
+**https://huggingface.co/TODO-account/TODO-repo** (placeholder; the link will be filled in when the files are up).
+
+| File | What it is |
+|---|---|
+| `LFM2.5-VL-450M-mix-Q4_0.gguf` | the fine-tuned language model the release app uses |
+| `mmproj-LFM2.5-VL-450m-Q8_0.gguf` | the image encoder, unchanged from Liquid AI's release |
+
+**How to place them.** Keep the file names exactly as above.
+
+- Release bundle: put both files in `models/src/main/assets/vl/`, with the licence and notice files described under
+  *Release bundle* below. `./gradlew :app:bundleRelease` then packs them into the `models` asset pack.
+- Debug build: copy both files into the app's storage under `files/vl/` with adb, as shown under *Debug build* below,
+  using these file names in place of the base model's.
+
+If the files are missing, the build still succeeds and the app runs on code only: the model chips do not appear.
+
+**Licence.** The models are derived from Liquid AI's LFM2.5-VL-450M and are under the **LFM Open License v1.0**
+(`licenses/LFM-Open-License-v1.0.txt`), not under this repository's Apache License. In short: keep the licence text
+and a notice of the changes with the files when you pass them on; commercial use is licensed only for entities below
+US$10 million in annual revenue, or for qualifying non-profits; and the licence gives no right to Liquid AI's names or
+marks. The full terms in the licence text apply. `THIRD_PARTY_NOTICES.md` lists what was changed in the tuned model.
+
 ### The vision-language model (LFM2.5-VL-450M)
 
 Download two files from https://huggingface.co/LiquidAI/LFM2.5-VL-450M-GGUF:
@@ -74,7 +99,7 @@ Download two files from https://huggingface.co/LiquidAI/LFM2.5-VL-450M-GGUF:
 - `mmproj-LFM2.5-VL-450m-Q8_0.gguf`: the image encoder.
 
 The Play release uses a fine-tuned copy of the language model, `LFM2.5-VL-450M-mix-Q4_0.gguf` (see
-`THIRD_PARTY_NOTICES.md`). Those tuned weights are not published, so builds from this repository use the base model.
+`THIRD_PARTY_NOTICES.md`), hosted on Hugging Face as described above. Without it, debug builds can use the base model.
 
 **Debug build.** The app looks for the files in its own storage, under `files/vl/`. Install the debug APK, then copy
 them in with adb:
